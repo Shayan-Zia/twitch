@@ -1,0 +1,354 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  color: black
+}
+
+h3{
+  padding: 0.4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar{
+  height: 50px;
+  width: 100%;
+  color: black;
+  border: 1px solid rgb(209, 209, 209);
+  display: flex;
+  align-items: center;
+ justify-content:space-between;
+ padding-right: 20px;
+}
+.text h1{
+  height: 50px;
+  width: 50px;
+  color: black;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  margin: 0 30rem 0 40rem;
+  flex-grow: -10;
+   
+}
+.sign-up button{
+width: 70px;
+height: 30px;
+border-radius: 30%;
+background-color: rgb(124, 78, 124);
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.sign-up button:hover{ 
+  background-color: purple;
+}
+
+.login button:hover{
+  background-color: rgb(71, 70, 70);
+  color: #ffffff;
+}
+.login button{
+  border: 1px solid lightgray;
+  background-color: rgb(121, 120, 120);
+  border-radius: 30px;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+}
+.search{
+ border-radius: 15%;  
+}
+
+.Twitch-logo{
+  height: 40px; 
+}
+
+
+.video-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+  gap: 3rem 1rem;
+  padding: 1rem 3rem 3rem ;
+  margin: 0 1.5rem;
+  border-top: 4px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    /* General Mobile Adjustments */
+    body {
+        padding: 0;
+    }
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0.5rem;
+    }
+
+    .Twitch-logo {
+        height: 30px;
+    }
+
+    h3 {
+        display: none; /* Hides "BROWSE" on mobile */
+    }
+
+    .search-bar {
+        margin: 0.5rem 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search input {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .login, .sign-up {
+        display: none; /* Hides login/signup buttons to save space */
+    }
+
+    /* Video Sections */
+    .video-section {
+        grid-template-columns: 1fr; /* Changes to a single column */
+        gap: 1.5rem;
+        padding: 1rem 0.5rem;
+        margin: 0;
+        border-top: none;
+    }
+
+    .video-bottom-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .channel-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Categories Menu */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .menu a {
+        width: 80%;
+        justify-content: center;
+    }
+
+    /* Category Cards */
+    .categories {
+        justify-content: flex-start; /* Aligns cards to the left for better scrolling */
+    }
+
+    .category-card {
+        width: 120px;
+    }
+
+    .category-card img {
+        height: 150px;
+    }
+
+    /* Footer */
+    footer .footer-container {
+        padding: 0 10px;
+    }
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.video-title {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.thumbnail {
+  position: relative;
+  display: flex;
+}
+
+.channel-icon {
+  border-radius: 100%;
+  margin-right: 0.55rem;
+  height: 50px;
+  width: 50px;
+  background-color: #c9c5c5;
+}
+.video-metadata{
+  width: 50px;
+  border-radius: 20px;
+}
+
+.video-bottom-section {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+.video-title {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.video-channel-name {
+  margin-bottom: 0.8rem;
+  text-decoration: none;
+  color:  black;
+}
+ .verified-icon {
+ font-size: 1.1em; 
+ margin-left: 1px;
+}
+
+ .container {
+  padding: 20px;
+  width: 1800px;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-more-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #9d7bff;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.categories{
+  color: #7e3ae5;
+  padding: 12px;
+  flex:bold;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+  justify-content:center ; 
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #9146FF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 20px;  
+}
+.menu a:hover {
+  background-color: #772ce8; 
+}
+
+.menu img {
+  width: 24px;
+  height: 24px;
+}
+
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.categories {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.category-card {
+  background: #18181b;
+  border-radius: 10px;
+  width: 160px;
+  flex: 0 0 auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+ 
+.category-card img {
+ width: 100%;
+ height: 200px; 
+ object-fit: cover;
+ border-radius: 10px 10px 0 0;
+}
+
+.card-info {
+  padding: 10px;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.card-viewers {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.tags {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-size: 11px;
+  background: #303030;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+
+footer {  
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #403f3f;
+}
+
